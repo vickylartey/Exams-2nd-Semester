@@ -4,12 +4,9 @@ import "../App.css"
 function NestedPage() {
   return (
     
-    <div>
-      
-
-     This is our nested page
-      
-    </div>
+    <div>   
+  <p> This is our nested page</p>
+</div>
 
     )
 }

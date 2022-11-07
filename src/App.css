@@ -16,6 +16,8 @@ h1, p{
 .nav p:hover{
   color: #00125c;
   background-color: white;
+  border: 1px gray;
+  border-radius: 5px;
 }
 .form{
   height: 100vh;
@@ -49,10 +51,43 @@ h1, p{
   background-color: #19431b;
 }
 
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px double steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
 
 
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 4px 14px;
+  margin: 0 46px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
 
+.btn:focus {
+  outline: none;
+}
 
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
 
 @media screen and (min-width: 1200px) {
   .form{
@@ -60,6 +95,17 @@ h1, p{
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 140px;
+}
+  .nav{
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 240px;
+}
+  .container {
+  max-width: 900px;
+  min-height: 350px;
 }
 
 }

@@ -23,8 +23,10 @@ function DoctorAppointment() {
       {
         user ?
         <div>
-          <h1>Hello {user.firstName}</h1>
+          
+          <p>Hi {user.firstName}</p>
       <h1> Book a doctor's appointment here </h1>
+          <div className="container"></div>
           
           <div>
              {user ? (
@@ -49,7 +51,7 @@ function DoctorAppointment() {
         :
         <div>
            <h1>Please login to book an appointment</h1>
-          <Link to="/login"><p>Login here</p></Link>
+          <Link className="btn" to="/login"><p>Login here</p></Link>
         </div>
        
       }
