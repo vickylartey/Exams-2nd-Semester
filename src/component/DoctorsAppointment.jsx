@@ -33,6 +33,7 @@ function DoctorAppointment() {
                 <p>
                   <span>{user?.firstName} {user?.lastName}</span>
                   <button
+                    className="btn"
                     onClick={handleLogout}
                   >
                     Logout
