@@ -13,7 +13,6 @@ function SignUp() {
 
   return (
     <div>
-      <Header />
       <form className='form' >
         <h1>SignUp</h1>
         <label>Email:</label>

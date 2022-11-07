@@ -13,7 +13,6 @@ function Login() {
 
 return (
   <div>
-    <Header />
     <form onSubmit={handleSubmit} className='form'>
       <h1>Login</h1>
       <label>Email:</label>

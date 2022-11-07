@@ -1,17 +1,17 @@
 import React from 'react'
 import "../App.css"
 
-function Home() {
+function NestedPage() {
   return (
     
     <div>
       
 
-<h1>welcome to our Home Page</h1>
+     This is our nested page
       
     </div>
 
     )
 }
 
-export default Home;
+export default NestedPage;
