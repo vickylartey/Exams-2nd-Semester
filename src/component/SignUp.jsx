@@ -2,24 +2,24 @@ import React, { useState } from 'react'
 //import Header from './Header'
 
 function SignUp() {
-    const [email, setEmail] = useState('')
+    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(email, password)
+    console.log(username, password)
     }
 
   return (
     <div>
       <form className='form' >
         <h1>SignUp</h1>
-        <label>Email:</label>
+        <label>Username:</label>
         <input 
-        type='email'
+        type='text'
         onChange={(e) => setEmail(e.target.value)}
-        value={email}
+        value={username}
         />
         <label>Password:</label>
         <input 

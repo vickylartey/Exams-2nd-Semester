@@ -9,6 +9,7 @@ import ErrorHandler from "./component/ErrorHandler"
 import Navbar from "./component/NavBar"
 import NestedPage from "./component/NestedPage"
 import ErrorPage from "./component/ErrorPage"
+import DoctorAppointment from "./component/DoctorsAppointment"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           </Route>
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/book-appointment" element={<DoctorAppointment/>} />
           <Route path='/*' element={<ErrorPage />} />
         </Routes>
       </Router>
