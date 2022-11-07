@@ -1,7 +1,7 @@
 import React from 'react'
 import "../App.css"
 import useAuth from "../hooks/useAuth";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function DoctorAppointment() {
   const { user, handleAuthLogout } = useAuth()
@@ -25,24 +25,17 @@ function DoctorAppointment() {
         <div>
           <h1>Hello {user.firstName}</h1>
       <h1> Book a doctor's appointment here </h1>
-
-
-
-          
-
-          
-          
           
           <div>
              {user ? (
-                <span>
+                <p>
                   <span>{user?.firstName} {user?.lastName}</span>
                   <button
                     onClick={handleLogout}
                   >
                     Logout
                   </button>
-                </span>
+                </p>
               ) : (
                 <span>
                   <Link to="/login" >
@@ -51,20 +44,14 @@ function DoctorAppointment() {
                 </span>  )
              }
           </div>
-
-
-
-
-
-
-
-
-
-          
-        </div>
+ </div>
         
         :
-        <p>Please login to book an appointment</p>
+        <div>
+           <h1>Please login to book an appointment</h1>
+          <Link to="/login"><p>Login here</p></Link>
+        </div>
+       
       }
       
 

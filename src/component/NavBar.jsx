@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom'
 function NavBar() {
   return (
     
-    <div>
+    <div className="nav">
       
 
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/book-appointment'>Book Appointment</Link>
-      <Link to='/login'>Login</Link>
-      <Link to='signup'>Signup</Link>
+      <Link to='/'><p>Home</p></Link>
+      <Link to='/about'><p>About</p></Link>
+      <Link to='/book-appointment'><p>Book Appointment</p></Link>
+      <Link to='/login'><p>Login</p></Link>
+      <Link to='signup'><p>Signup</p></Link>
       
     </div>
 
