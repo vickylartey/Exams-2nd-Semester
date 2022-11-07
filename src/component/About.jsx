@@ -9,7 +9,7 @@ export default function About() {
   return (
     <main>
         <h1>This is my about page</h1>
-      <Link to="/about/nested">View more</Link>
+      <Link to="/about/nested"><p>View more</p></Link>
       <Outlet/>
     </main>
   )
